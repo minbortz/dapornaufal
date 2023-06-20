@@ -1,0 +1,707 @@
+/* 
+    GROUP 1
+    Mariah Hanni Katrina 78127
+    Siti Nursyafiqah 78541
+    Venorica Soon Siao Chin 81434
+    Muhammad Faaris 78196
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+   
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius:15px;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+a{
+    color: #513252;
+    text-decoration: none;
+    font-size: 17px;
+}
+a:hover{
+    color: #9BABB8;
+}
+
+.btn-primary{
+    background-color: #D7C0AE;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color:white;
+    background-color: #9BABB8;
+}
+h2{
+    color: #513252;
+    font-size: 20px;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+
+}
+.ri-shopping-cart-2-fill{
+    font-size: 25px;  
+}
+
+/*  CSS for navbar section */
+
+.navbar{
+    height: 100px;
+    z-index: 100%;
+    
+}
+.navbar_{
+    background-color:tan;
+    position: fixed;
+    width: 100vw;
+}
+.logo{
+    width: 158px;
+    float: left;
+}
+.menu{
+    line-height: 150px;
+    margin-left: 700px;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 4%;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* CSS for Home */
+.home{
+    width: 100vw;
+    height: 100vh;
+}
+/* Set the video container to fill its parent element */
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Set the video to fill the entire container */
+.video-container video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+/* CSS for categories section*/
+.categories{
+    padding: 4% 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:cornsilk;
+    z-index:1;
+}
+.cat-container{
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+}
+.text-container{
+    text-align: left;
+  
+}
+.text-container h3{
+    font-size: 45px;
+}
+.text-container p{
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+    float: left;
+}
+.text-container h2{
+    font-size:30px;
+}
+.pavi{
+    margin-left: 750px;
+    margin-top: -400px; 
+    width: 50%;
+    float: left;
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.special1{
+    background-color: cornsilk;
+}
+.special {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.special h3 {
+    font-size: 45px;
+    color: #513252;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text-special p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.special-dish {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+/* Animation */
+
+.special:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  } 
+/* CSS for Food Menu*/
+
+.container{
+    width: 85%;
+    background-color:wheat;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+.container .title{
+    width: 60%;
+    margin: 0px auto 30px auto;
+}
+.container .title h2{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container .title p{
+    color: #333;
+    font-size: 14px;
+}
+.content .list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.content .list li{
+    color: #513252;
+    margin: 0px 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+}
+.content .list li::after{
+    content: "";
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #9BABB8;
+    transition: .4s ease-in-out;
+}
+.content .list li:hover::after{
+    width: 100%;
+}
+.content .list li:first-child{
+    color: #9BABB8;
+}
+.box_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box {
+    width: 35%;
+    background: #FFF;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+  
+.box:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+  
+.box .box_img{
+    width: 30%;
+    text-align: center;
+}
+.box_img img{
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+}
+.box .text{
+    text-align: left;
+    
+    width: 65%;
+}
+.text h3{
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.text hr{
+    width: 180px;
+    background: #9BABB8;
+    height: 3px;
+    border-radius: 15px;
+    margin: 5px 0px 10px 0px;
+}
+.text section{
+    font-size:20px;
+    color: #545B77;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.text .stars{
+    margin-bottom:5px;
+}
+.text .stars i{
+    font-size: 15px;
+    color: #F2BE22;
+    padding-left: 10px;
+}
+.food-detail{
+    font-size:15px;
+    color: lightslategray;
+    padding-left: 10px;
+}
+li{
+    font-size:14px;
+    color: lightslategray;
+    padding-left: 10px;
+} 
+.text article{
+    font-size: 15px;
+    padding: 3px;
+    color: #545B77;
+    padding-left: 10px;
+}
+.order{
+    background-color: #D7C0AE;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-left:160px;
+}
+.order:hover{
+    color:white;
+    background-color: #9BABB8;
+}
+.ri-heart-fill{
+    font-size: 25px;
+}
+
+/* CSS for testimonial section */
+.testimonial{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #D7C0AE;
+    padding-top: 800px 0;
+   
+}
+.testimonial .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 600px 0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:-1;
+}
+
+.slide p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 100px;
+    color: #513252;
+}
+.slide .ri-double-quotes-l{
+    font-size: 30px;
+    color: #513252
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #413543;
+}
+.details .faculty{
+    font-size: 14px;
+    font-weight: 400;
+    color: #413543;
+}
+/* Swiper Button CSS */
+.nav-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0,0,0,0.1) ;
+    transition: 0.2s
+}
+.nav-btn:hover{
+    background-color: #545B77;
+}
+.nav-btn::after,
+.nav-btn::before{
+    font-size: 20px;
+    color: #413543;
+}
+.swiper-pagination-bullet{
+    background-color: #333;
+}
+.swiper-pagination-bullet-active{
+    background-color: #545B77;
+}
+/* ------ CART -------*/
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    z-index: 100%;
+    transition: 0.3s;
+}
+.cart.active{
+    right: 0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 730;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: grey;
+    width:2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #D7C0AE;
+    cursor: pointer;
+    border: 1px;
+    border-radius: 14px;
+}
+.btn-buy:hover{
+    color:white;
+    background-color: #9BABB8;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* ---- FOOTER ----- */
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+}
+  /* Style the icon */
+footer i {
+    margin: 10px;
+}
+footer span{
+    font-size: 16px;
+    padding: 10px;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@keyframes movement{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media(max-width: 1320px){
+    .box{
+        width: 49%;
+    }
+}
+@media(max-width: 991px){
+    .container .title{
+        width: 80%;
+    }
+    .box .box_img{
+        text-align: left;
+    }
+    .box_img img {
+        width: 170px;
+        height: 170px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box .text{
+        width: 70%;
+    }
+}
+
+@media(max-width: 1080px){
+    .nav{
+        padding: 15px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .shop{
+        margin-top: 2rem !important;
+    }
+}
+
+@media (max-width: 400px){
+    .nav{
+        padding: 11px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width: 320px;
+    }
+}
+
+@media(max-width:991px){
+    .speical{
+        width:50%;
+    }
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 60px;
+    height:0;
+    width: 300px;
+    background:lightyellow;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .toggle_btn{
+    color:black;
+    font-size: 1.5rem;
+    cursor:pointer;
+    position:relative;
+    display:none;
+}
+
+@media (max-width: 992px) {
+    .navbar .menu,
+    .navbar .cart{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display:block;
+    }
+    
+   .dropdown_menu{
+        display:block;
+   }
+
+}
+
+@media only screen and (max-width: 800px){
+    .navbar{
+        width: 90%;
+        height: 90%;
+    }   
+    .home{
+        width: 90%;
+        height: 90%;
+    }
+    .categories{
+        width: 90%;
+        height: 90%;
+    }
+    .container{
+        width: 90%;
+        height: 90%;
+    }
+    .content{
+        width: 90%;
+        height: 90%;
+    }
+    .box_flex{
+        width: 90%;
+        height: 90%;
+    }
+    .special1{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
+
+
+  

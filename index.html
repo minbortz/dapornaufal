@@ -1,0 +1,733 @@
+<!--     GROUP 1
+    Mariah Hanni Katrina 78127
+    Siti Nursyafiqah 78541
+    Venorica Soon Siao Chin 81434
+    Muhammad Faaris 78196
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapor Naufal</title>
+    
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <!-- Remix Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header section -->
+    <section class="navbar">
+        <div class="navbar_">
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+               <img src="images/logo1.svg"  class="img-responsive">
+            </div>
+            
+
+            <div class="menu">
+                <ul>                  
+                    <li>
+                        <a href="#home" target="_top" onclick="showLoadingIcon()">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#about" target="_top" onclick="showLoadingIcon()" >About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#food" target="_top" onclick="showLoadingIcon()" >Foods</a>
+                    </li>
+
+                    <li>
+                        <a href="#review" target="_top" onclick="showLoadingIcon()">Review</a>
+                    </li>
+                    <li>
+                        <a href="#cart" target="_top" onclick="showLoadingIcon()"><i class="ri-shopping-cart-2-fill" id="cart-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown_menu">
+                <li>
+                    <a href="#home" target="_top" onclick="showLoadingIcon()">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#about" target="_top" onclick="showLoadingIcon()" >About Us</a>
+                </li>
+
+                <li>
+                    <a href="#food" target="_top" onclick="showLoadingIcon()" >Foods</a>
+                </li>
+
+                <li>
+                    <a href="#review" target="_top" onclick="showLoadingIcon()">Review</a>
+                </li>
+                <li>
+                    <a href="#cart" target="_top" onclick="showLoadingIcon()"><i class="ri-shopping-cart-2-fill" id="cart-icon"></i></a>
+                </li>
+            </div>
+                <!-- Cart section -->
+    <div class="cart">
+        <h2 class="cart-title">Cart</h2>
+        <!--Content-->
+        <div class="cart-content">
+            <div class="cart-box">
+                <img src="images/abt.jpeg" alt="" class="cart-img">
+                <div class="detail-box">
+                    <div class="cart-product-title">Butter Chicken Rice</div>
+                    <div class="cart-price">RM8.00</div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+                <!--Remove Cart-->
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div>
+        </div>
+        <!--Total-->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">RM0.00</div>
+        </div>
+        <!--Buy Button-->
+        <button type="button" class="btn-buy">Order Now</button>
+        <i class="ri-close-line" id = "close-cart"></i>
+    </div>
+    <!-- cart section ends here-->
+
+        </div>
+    </section>
+<!-- header ends here-->
+
+    <!--homeSection-->
+    <section class="home" id="home" >
+        <div class="video-container">
+            <video autoplay muted loop>
+              <source src="images/ayam-butter.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!-- home section ends here-->
+
+    <!--Categories Section-->
+    <section class="categories" id="about">
+        <div class="cat-container">
+            <div class="text-container">
+                <h3>Dapor Naufal</h3>
+                <h2> We are excited <br> to welcome you to Dapor Naufal.</h2>
+                <p>At Dapor Naufal, we are passionate about serving delicious and <br> mouth-watering food to satisfy your cravings. <br>
+                    Quality is our utmost priority. <br>
+                    We source the finest, freshest ingredients available to 
+                    <br> ensure that every dish we serve is of the highest quality. <br>
+                    we value the importance of customer satisfaction.<br> We believe that excellent food should be accompanied by exceptional service. <br>
+                    Our friendly and attentive staff is <br> dedicated to making your visit pleasant and memorable.<br>
+                    We aim to create a welcoming and comfortable atmosphere  <br>where you can indulge in your favorite flavors and enjoy every moment. <br>
+                </p>
+            
+            </div>
+            <img src="images/pavi.jpg" alt="" class="pavi">
+        </div>
+    </section>
+    <!-- ends of categories section-->
+
+    <!--special dish-->
+    <section class="special1">       
+    <div class="special">
+        <h3><span>Special</span> Dish</h3>
+          <img src="images/home.abt.png" alt="special dish" class="special-dish">
+        
+        <div class="text-special ">
+          <p>Butter Chicken Rice</p>
+        </div>
+      </div>
+    </section>
+    <!-- special dish ends-->
+    
+
+<!-- Food Menu -->
+
+    <div class="container" id="food">
+     <div class="title">
+        <h2>Food Menu</h2>
+        <p>
+            Best food at Pavi! Try yours now!
+        </p>
+    </div>        
+    <div class="content">
+        <div class="list">
+            <li data-color=".Ayam">Chicken</li>
+            <li data-color=".Daging">Beef</li>
+            <li data-color=".Sotong">Squid</li>
+            <li data-color=".Udang">Prawn</li>
+            <li data-color=".Terubuk">Terubuk</li>
+
+        </div>
+
+        <div class="box_flex" id="box_flex">
+
+            <div class="box Ayam">
+                <div class="box_img">
+                    <img src="images/ak.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Kunyit Chicken Rice</h3>
+                    <hr>
+                    <section class="price">RM7.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Turmeric powder </li> 
+                        <li>Chicken </li>
+                        <li>Mixed Vegetables</li> 
+                    </p>
+                    <article>Category: Chicken</article>
+                    <a href="#" class="order">Order Now</a>
+                </div> 
+            </div>
+            <div class="box Ayam">
+                <div class="box_img">
+                    <img src="images/al.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Lemon Chicken Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Lemon Sauce</li>
+                        <li>Chicken</li>  
+                    </p>
+                    <article>Category: Chicken</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+            <div class="box Ayam">
+                <div class="box_img">
+                    <img src="images/ap.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Paprik Chicken Rice</h3>
+                    <hr>
+                    <section class="price">RM7.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Paprik Sauce</li>
+                        <li>Chicken</li>
+                        <li>Mixed Vegetables</li> 
+                    </p>
+                    <article>Category: Chicken</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+            <div class="box Ayam">
+                <div class="box_img">
+                    <img src="images/bp.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title"> Blackpepper Chicken Rice</h3>
+                    <hr>
+                    <section class="price">RM7.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div> 
+                    <p class="food-detail"> 
+                        Made with:
+                    <li>Black Pepper Sauce</li>
+                    <li>Chicken</li>
+                    <li>Yellow Onion</li>
+                    <li>Mixed Vegetables</li> 
+                </p>
+                    <article>Category: Chicken</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+            <div class="box Ayam">
+                <div class="box_img">
+                    <img src="images/abt.jpeg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Butter Chicken Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                       <li>Butter Sauce</li>
+                       <li>Chicken</li>
+                       <li>Curry Leaf</li> 
+                    </p>
+                    <article>Category: Chicken</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Daging">
+                <div class="box_img">
+                    <img src="images/dapa.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Paprik Beef Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Paprik Sauce </li>
+                        <li>Beef</li>
+                        <li>Mixed Vegetables</li>
+                    </p>
+                    <article>Category: Beef</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Daging">
+                <div class="box_img">
+                    <img src="images/dbp.png" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title"> Blackpepper Beef Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Black Pepper Sauce</li>
+                        <li>Chicken</li>
+                        <li> Yellow Onion </li>
+                        <li>Mixed Vegetables</li>
+                    </p>
+                    <article>Category: Beef</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Daging">
+                <div class="box_img">
+                    <img src="images/dk.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Kunyit Beef Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Turmeric powder </li> 
+                        <li>Beef </li>
+                        <li>Mixed Vegetables</li> 
+                    </p>
+                    <article>Category: Beef</article>
+                    <a href="#" class="order">Order Now</a>
+
+                </div>
+            </div>
+
+            <div class="box Sotong">
+                <div class="box_img">
+                    <img src="images/sb.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Butter Squid Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Butter Sauce</li>
+                        <li>Squid</li>
+                        <li>Curry leaf</li> 
+                    </p>
+                    <article>Category: Squid</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Sotong">
+                <div class="box_img">
+                    <img src="images/sbp.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title"> Blackpepper Squid Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Black Pepper Sauce</li>
+                        <li>Squid</li>
+                        <li>Yellow Onion</li>
+                        <li>Mixed Vegetables</li>
+                    </p>
+                    <article class="price">Category: Squid</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Sotong">
+                <div class="box_img">
+                    <img src="images/sk.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Kunyit Squid Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Turmeric powder </li> 
+                        <li>Squid </li>
+                        <li>Mixed Vegetables</li>
+                    </p>
+                    <article>Category: Squid</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Sotong">
+                <div class="box_img">
+                    <img src="images/sp.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title"> Paprik Squid Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with 
+                        <li>Paprik Sauce</li>
+                        <li>Chicken</li>
+                        <li> Mixed Vegetables</li>
+                    </p>
+                    <article>Category: Squid</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+
+            <div class="box Udang">
+                <div class="box_img">
+                    <img src="images/ubp.JPG" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Blackpepper Prawn Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Black Pepper Sauce</li>
+                        <li>Prawn</li>
+                        <li>Mixed Vegetables</li>
+                    </p>
+                    <article class="price">Category: Prawn</article>
+                    <a href="#" class="order">Order Now</a>
+
+                </div>
+            </div>
+
+            <div class="box Udang">
+                <div class="box_img">
+                    <img src="images/ubt.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Butter Prawn Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Butter Sauce</li>
+                        <li>Prawn</li>
+                        <li>Curry leaf</li> 
+                    </p>
+                    <article>Category:  Prawn</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Udang">
+                <div class="box_img">
+                    <img src="images/uk.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title"> Kunyit Prawn Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Turmeric powder </li> 
+                        <li>Prawn </li>
+                        <li>Mixed Vegetables</li>
+                    </p>
+                    <article>Category: Prawn</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Udang">
+                <div class="box_img">
+                    <img src="images/up.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title"> Paprik Prawn Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Paprik Sauce</li>
+                        <li>Prawn</li> 
+                        <li>Mixed Vegetables</li> 
+                    </p>
+                    <article >Category: Prawn</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+            <div class="box Terubuk">
+                <div class="box_img">
+                    <img src="images/tm.jpg" alt="" class="product-image">
+                </div>
+                <div class="text">
+                    <h3 class="product-title">Salty Terubuk Rice</h3>
+                    <hr>
+                    <section class="price">RM8.00</section>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                    </div>
+                    <p class="food-detail">
+                        Made with:
+                        <li>Salty Terubuk </li> 
+                    </p>
+                    <article>Category: Terubuk</article>
+                    <a href="#" class="order">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+<!-- Food Menu section ends here-->
+
+    <!-- Testimonial Customer-->
+    <section class="container" id="review">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="images/account.svg" alt="" class="image">
+                    <p> I am a regular customer at this stall and I absolutely love the 'Nasi Ayam Butter'! <br>
+                        It is affordable and it has great portion too! Will always repeat the food :D
+
+                    </p>
+                    <i class="ri-double-quotes-l"></i>
+                    <div class="details">
+                        <span class="name">Nicholas Anak Noah</span>
+                        <span class="faculty">Applied and Creative Arts</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/account.svg" alt="" class="image">
+                    <p> I usually order Paprik Squid Rice because their squids and vegetables are fresh.<br>The portion is also big which make me satisfied.
+                        The price is also considered cheap. ^_^
+
+
+                    </p>
+                    <i class="ri-double-quotes-l"></i>
+                    <div class="details">
+                        <span class="name">Jonathan King</span>
+                        <span class="faculty">Cognitive Science and Human Development</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/account.svg" alt="" class="image">
+                    <p> This is my first time to order Paprik Chicken Rice and I really love the sauce.<br>Gonna repeat this menu.
+
+                    </p>
+                    <i class="ri-double-quotes-l"></i>
+                    <div class="details">
+                        <span class="name">Mohamad Adib</span>
+                        <span class="faculty">Language and Communication</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/account.svg" alt="" class="image">
+                    <p> I'm in love with Blackpepper Prawn Rice because their prawn are very fresh.<br>
+                        I also love the the Blackpepper sauce.All the menu also affordable.
+
+                    </p>
+                    <i class="ri-double-quotes-l"></i>
+                    <div class="details">
+                        <span class="name">Amayra Nurin</span>
+                        <span class="faculty">Economics and Business</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/account.svg" alt="" class="image">
+                    <p> I am regular customer of this stall.I usually order Butter Prawn Rice and because I like the prawn a lot.<br>
+                        The price is also affordable. 
+
+                    </p>
+                    <i class="ri-double-quotes-l"></i>
+                    <div class="details">
+                        <span class="name">Emily Lau Mei Hao</span>
+                        <span class="faculty">Resource Science and Technology</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/account.svg" alt="" class="image">
+                    <p> I really their Blackpepper Chicken Rice.They also give me a lot of sauce and portion is also big.<br>
+                        Really love their menu.
+                
+
+                    </p>
+                    <i class="ri-double-quotes-l"></i>
+                    <div class="details">
+                        <span class="name">Jacky Jong</span>
+                        <span class="faculty">Computer Science Information Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Customer testimonial ends here-->
+
+        <!-- footer-->
+        <footer>
+            <i class="ri-map-pin-line"></i>
+            <span>Pavi, UNIMAS</span>
+
+            <i class="ri-phone-line"></i>
+            <span>012-3456789</span>
+
+            <i class="ri-time-line"></i>
+            <span>10 a.m. - 8 p.m.</span>
+
+        </footer>
+        <!--footer ends-->
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Javascript-->
+    <script src="script.js"> </script>
+
+</body>
+</html>
